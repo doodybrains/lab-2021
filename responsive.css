@@ -1,0 +1,41 @@
+body {
+    background: black;
+    font-family: monospace;
+    padding: 20px;
+    font-size: 16px;
+    /* 16px = 1em */
+
+    /* if you want your pixel size to be close to 20px,
+    you would divide 20/16
+    = 1.25
+    1.25em */
+}
+
+p {
+    font-weight: bold;
+    color: mediumpurple;
+    font-size: 1.25em; 
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background: hotpink;
+    }
+
+    .container {
+        padding: 60px;
+        flex-direction: row;
+    }
+
+    p {
+        width: 10%;
+    }
+}
+

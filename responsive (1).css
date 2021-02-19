@@ -1,0 +1,28 @@
+  
+  h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    color:blue;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-style: italic;
+    color:blue;
+}
+
+body{
+    background-color: lightgray;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(70, 76, 82);
+}
+
+@media screen and (min-width: 768px) {
+    p {
+      color:blue;
+    }
+  }
