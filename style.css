@@ -2,6 +2,26 @@ body {
 	background: mediumpurple;
 	color: white;
 	font-family: monospace;
-	font-size: 2.5em;
-
+	font-size: 1.5em;
+	padding: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// at the desktop view
+/* @media min-width 768px {
+	body {
+		font-size: 3em;
+	}	
+} */
