@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name= "viewport" content="width=device-width, initial scale= 0.1">
+    <link rel="stylesheet" href="main.css">
+    <meta content="">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(".show").click(function() {
+        console.log('show clicked');
+        $('.hide').toggleClass("show");
+      });  
+    </script>
+    <style>
+      .hide{display:none;}
+      .show{display:block;}
+    </style>
+  </head>
+
+ <div class="box1"></div>
+  
+  <div class="title">to: gertrude stein</div> 
+
+<div class="bubble-container align-right">
+  <a href="info.html"><div 
+    class="circle">i</div>
+  </a>
+</div>
+
+<div class="bubble-container align-left">
+<div class="box2">on punctuation: </div>
+</div>
+
+
+    <div class="bubble-container align-middle">
+    <p id="invisible" class="react1 hide">!!!</p>
+    </div>
+    <div class="bubble-container align-left">
+    <p id="visible" class="box3 show">there are some punctuations that are interesting</p>
+    </div>
+
+    <div class="bubble-container align-middle">
+    <p id="invisible" class="react1 hide">???</p>
+    </div>
+    <div class="bubble-container align-left">
+    <p id="visible" class="box3 show">and there are some punctuations that are not</p>
+    </div>
+    </body>
+    </html>
