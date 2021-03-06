@@ -6,15 +6,20 @@
     <link rel="stylesheet" href="main.css">
     <meta content="">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
+    <!-- <script>
       $(".show").click(function() {
         console.log('show clicked');
         $('.hide').toggleClass("show");
       });  
-    </script>
+    </script> -->
     <style>
       .hide{display:none;}
       .show{display:block;}
+
+      .bubble-container.show-emoji .hide {
+        border: 2px solid red;
+        display: block;
+      }
     </style>
   </head>
 
@@ -33,18 +38,23 @@
 </div>
 
 
-    <div class="bubble-container align-middle">
-    <p id="invisible" class="react1 hide">!!!</p>
-    </div>
+    <!-- <div class="bubble-container align-middle">
+    
+    </div> -->
+
     <div class="bubble-container align-left">
-    <p id="visible" class="box3 show">there are some punctuations that are interesting</p>
+      <p id="invisible" class="react1 hide">!!!</p>
+      <p id="visible" class="box3 show">there are some punctuations that are interesting</p>
     </div>
 
-    <div class="bubble-container align-middle">
-    <p id="invisible" class="react1 hide">???</p>
-    </div>
+    <!-- <div class="bubble-container align-middle">
+    
+    </div> -->
     <div class="bubble-container align-left">
-    <p id="visible" class="box3 show">and there are some punctuations that are not</p>
+      <p id="invisible" class="react1 hide">???</p>
+      <p id="visible" class="box3 show">and there are some punctuations that are not</p>
     </div>
+
+    <script src="script.js"></script>
     </body>
     </html>

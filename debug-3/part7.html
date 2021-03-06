@@ -23,7 +23,7 @@
             </p>
             <br>
             <p>
-                I’m in my mid-30s now and my periods have always been a physical and mental slog. It is thought that 90% of women experience some premenstrual changes, even if mildly. There are more than 150 clinically identified symptoms of PMS, including <span class="text"></span> A laugh riot, in other words.
+                I’m in my mid-30s now and my periods have always been a physical and mental slog. It is thought that 90% of women experience some premenstrual changes, even if mildly. There are more than 150 clinically identified symptoms of PMS, including <span class="text">starting text</span> A laugh riot, in other words.
             </p>
             <br>
             <p>  
@@ -94,7 +94,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.9/jquery.velocity.min.js"></script>
 
         <script>
-          
+            console.log(Math.floor(Math.random()));
             class TextScramble {
             constructor(el) {
               this.el = el
@@ -110,6 +110,7 @@
                 const from = oldText[i] || ''
                 const to = newText[i] || ''
                 const start = Math.floor(Math.random() * 40)
+                  console.log(start);
                 const end = start + Math.floor(Math.random() * 40)
                 this.queue.push({ from, to, start, end })
               }
@@ -119,6 +120,7 @@
               return promise
             }
             update() {
+              console.log("this is calling the update function");
               let output = ''
               let complete = 0
               for (let i = 0, n = this.queue.length; i < n; i++) {
@@ -160,14 +162,22 @@
             const fx = new TextScramble(el)
             
             let counter = 0
+
             const next = () => {
-            fx.setText(phrases[counter]).then(() => {
-              setTimeout(next, 800)
-            })
-            counter = (counter + 1) % phrases.length
+              fx.setText(phrases[counter]).then(() => {
+                setTimeout(next, 800)
+              })
+              counter = (counter + 1) % phrases.length
             }
+
+            el.addEventListener('mouseenter', event => {
+              console.log(el);
+              el.innerHTML = "";
+              next()
+              console.log("mouse hover working when i go over text element");
+            })
+
             
-            next()
                     </script>
 <script>
 /*!
