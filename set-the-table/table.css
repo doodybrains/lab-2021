@@ -1,0 +1,40 @@
+body {
+  background-color: snow;
+  width: 100%;
+
+}
+.container {
+  position: relative;
+  margin: 80px auto;
+  height: 500px;
+  width: 800px;
+}
+.tablecloth, .cup, .plate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.tablecloth {
+  z-index: 8;
+}
+.cup, .plate {
+  z-index: 10;
+}
+
+.tablecloth {
+  height: 100%;
+  width: 100%;
+}
+
+.cup {
+  width: 80px;
+  height: 90px;
+}
+
+.plate {
+  height: 150px;
+  width: 150px;
+}
+
