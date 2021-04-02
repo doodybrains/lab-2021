@@ -67,15 +67,15 @@ function setTable(allItems) {
         cup.classList.add("cup");
 
         if (i === 0) {
-          cup.style.left = "550px";
+          cup.style.left = "80%";
         }
         if (i === 1) {
-          cup.style.left = "500px";
-          cup.style.top = "150px";
+          cup.style.left = "80%";
+          cup.style.top = "60%";
         }
         if (i === 2) {
-          cup.style.left = "60px";
-          cup.style.top = "30px";
+          cup.style.left = "10%";
+          cup.style.top = "10%";
         }
 
         container.appendChild(cup);
@@ -90,15 +90,16 @@ function setTable(allItems) {
         plate.classList.add("plate");
 
         if (i === 0) {
-          plate.style.left = "650px";
+          plate.style.left = "70%";
+          plate.style.top = "20%";
         }
         if (i === 1) {
-          plate.style.left = "400px";
-          plate.style.top = "250px";
+          plate.style.left = "55%";
+          plate.style.top = "60%";
         }
         if (i === 2) {
-          plate.style.left = "40px";
-          plate.style.top = "120px";
+          plate.style.left = "5%";
+          plate.style.top = "25%";
         }
 
         container.appendChild(plate);
