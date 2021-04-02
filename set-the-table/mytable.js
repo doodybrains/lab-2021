@@ -56,10 +56,16 @@ function setTable(allItems) {
     let imageUrl = item.fields.images[0].url;
 
 
-    // these are the names I used in my airtable, yours will be different!!
+    // let itemImage = document.createElement('img');
+    // itemImage.src = imageUrl;
+    // itemImage.classList.add(item.fields.kind_of_item);
+    // container.appendChild(itemImage);
+
+    // the following code is for making multiple cups and plates etc out of just one Airtable record and then positioning them in specific spots on the table. these are the names I used in my airtable, yours will be different!!
     // here i want to do different things with different items
     // so if the item is a Cup, I want to add a class name of cup, and put each one in a different position on the page.
     // dont forget, some of the styling for my page here in JS and some is in my CSS file, for example I know that my .cup class has position: absolute set in CSS, which means that style.left and style.top will work here in the JS.
+    
     if (name === "Cup") {
       for (var i=0; i<3; i++) {
         let cup = document.createElement('img');
@@ -83,35 +89,35 @@ function setTable(allItems) {
     }
 
     // Same idea with the plates.
-    if (name === "Plate") {
-      for (var i=0; i<3; i++) {
-        let plate = document.createElement('img');
-        plate.src = imageUrl;
-        plate.classList.add("plate");
+    // if (name === "Plate") {
+    //   for (var i=0; i<3; i++) {
+    //     let plate = document.createElement('img');
+    //     plate.src = imageUrl;
+    //     plate.classList.add("plate");
 
-        if (i === 0) {
-          plate.style.left = "70%";
-          plate.style.top = "20%";
-        }
-        if (i === 1) {
-          plate.style.left = "55%";
-          plate.style.top = "60%";
-        }
-        if (i === 2) {
-          plate.style.left = "5%";
-          plate.style.top = "25%";
-        }
+    //     if (i === 0) {
+    //       plate.style.left = "70%";
+    //       plate.style.top = "20%";
+    //     }
+    //     if (i === 1) {
+    //       plate.style.left = "55%";
+    //       plate.style.top = "60%";
+    //     }
+    //     if (i === 2) {
+    //       plate.style.left = "5%";
+    //       plate.style.top = "25%";
+    //     }
 
-        container.appendChild(plate);
-      }
-    }
+    //     container.appendChild(plate);
+    //   }
+    // }
 
     // Same idea with the tablecloth.
-    if (name === "Tablecloth") {
-      let tablecloth = document.createElement('img');
-      tablecloth.src = imageUrl;
-      tablecloth.classList.add("tablecloth");
-      container.appendChild(tablecloth);
-    }
+    // if (name === "Tablecloth") {
+    //   let tablecloth = document.createElement('img');
+    //   tablecloth.src = imageUrl;
+    //   tablecloth.classList.add("tablecloth");
+    //   container.appendChild(tablecloth);
+    // }
   })
 }
