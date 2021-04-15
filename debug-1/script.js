@@ -1,4 +1,5 @@
-// console.log("my js is working!!!!!");
+// here i added a console log just to make sure my javascript file is connected to my HTML file
+console.log("my js is working!!!!!");
 
 // this line get all elements that have class name of bubble container
 var allBubbleContainers = document.querySelectorAll("bubble-container");
