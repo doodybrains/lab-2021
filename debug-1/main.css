@@ -1,17 +1,17 @@
 body {
-  background-color: lightpink;
+  background-color: rgb(246, 227, 255);
 }
 
 
 .bubble {
+  cursor: pointer;
   display: block;
   position: absolute;
-  top: 300px;
-  left: 300px;
   background-color: transparent;
-  width: 15px;
-  height: 15px;
-  border: 3px solid blue;
+  width: 35px;
+  height: 35px;
+  border: 2px solid rgba(0, 0, 255, 0.425);
+  background-color: rgba(0, 0, 255, 0.199);
   z-index: 2;
   border-radius: 50%;
 }
